@@ -29,6 +29,7 @@ body {
          ul {
             background-color: @main-color;
             border-top: solid 3px black;
+            border-bottom: solid 1px black;
             list-style-type: none;
             margin: 0;
             padding: 0;
@@ -71,6 +72,28 @@ body {
          }
          div {
             text-align: center;
+            div.workedfor {
+               align-items: center;
+               display: flex;
+               margin: 0 auto 0 auto;
+               width: 800px;
+               div.logo {
+                  float: left;
+                  width: 500px;
+                  transition: 0.65s;
+               }
+               div.logo:hover {
+                  transform: scale(1.2);
+               }
+               div.text {
+                  background-color: @main-color;
+                  border-radius: 100px;
+                  color: white;
+                  float: right;
+                  padding: 50px;
+                  width: 300px;
+               }
+            }
             div.w260 {
                display: inline-block;
                width: 260px;
@@ -146,6 +169,7 @@ body {
             ul {
                li {
                   display: block;
+                  padding: 10px;
                }
             }
          }
@@ -162,6 +186,19 @@ body {
                text-align: center;
                img.logo {
                   margin-top: 65px;
+               }
+            }
+            div {
+               div.workedfor {
+                  div.logo {
+                     display: block;
+                  }
+                  div.logo:hover {
+                     transform: scale(1);
+                  }
+                  div.text {
+                     display: none;
+                  }
                }
             }
          }
