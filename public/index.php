@@ -74,6 +74,7 @@
                      <li><input type="radio" id="channel4" name="channel" onchange="how_did_you_meet_us();">&nbsp;&nbsp;Otros</li>
                   </ul>
                </div>
+               <div id="emoji_1">&nbsp;</div>
             </div>
          </section>
 
@@ -93,6 +94,7 @@
                      <input type="button" id="send_contact_button" value="Enviar" onclick="send_contact();" />
                   </form>
                </div>
+               <div id="emoji_2">&nbsp;</div>
             </div>
          </section>
 

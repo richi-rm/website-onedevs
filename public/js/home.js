@@ -2,6 +2,8 @@ async function how_did_you_meet_us()
 {
    var channel;
 
+   // channel
+   //
           if (document.getElementById('channel1').checked) {
       channel = 1;
    } else if (document.getElementById('channel2').checked) {
@@ -19,27 +21,61 @@ async function how_did_you_meet_us()
    // console.log(result);
 
    // disable radios
+   //
    for (let i=1; i<=4; i++) {
       radio = document.getElementById('channel'+i);
       radio.disabled = true;
    }
+
+   // emoji manita pulgar voladora
+   //
+   emoji_1 = document.getElementById('emoji_1');
+   emoji_1.innerHTML = '👍';
+   setTimeout(function () {
+      emoji_1.classList.add('emoji_1_move');
+   }, 10);
+   setTimeout(function () {
+      emoji_1.innerHTML = '&nbsp;';
+   }, 2100);
 }
 
 async function send_contact()
 {
-   contact = document.getElementById('email_or_phone').value.trim();
-   if (contact == '') return;
-   document.getElementById('email_or_phone').value = '';
+   // email or phone
+   //
+   input = document.getElementById('email_or_phone');
+   contact = input.value.trim();
+   if (contact == '') {
+      input.value = '';
+      return;
+   }
 
    const response = await fetch('ajax.php?do=save_contact&contact=' + contact);
    const result = await response.text();
    // console.log(result);
 
    // disable inputs
+   //
+
+   input.value = '';
+
    document.getElementById('email_or_phone').disabled = true;
    document.getElementById('email_or_phone').style.borderColor = '#d0d0d0';
    document.getElementById('send_contact_button').disabled = true;
    document.getElementById('send_contact_button').style.backgroundColor = '#a0a0a0';
    document.getElementById('send_contact_button').style.borderColor = '#d0d0d0';
    document.getElementById('send_contact_button').style.cursor = 'auto';
+
+   // emoji corazón
+   //
+   emoji_2 = document.getElementById('emoji_2');
+   emoji_2.innerHTML = '❤️';
+   setTimeout(function () {
+      emoji_2.classList.add('emoji_2_move');
+   }, 10);
+   setTimeout(function () {
+      emoji_2.innerHTML = '&nbsp;';
+   }, 2100);
+
+   document.getElementById('send_contact_button').value = '¡Gracias!';
 }
