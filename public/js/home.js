@@ -52,7 +52,7 @@ async function send_contact()
       input.placeholder = 'Aquí un teléfono o email';
       setTimeout(function () {
          input.placeholder = 'Teléfono o email';
-      }, 1000);
+      }, 1500);
       return;
    }
 
@@ -60,10 +60,10 @@ async function send_contact()
    const result = await response.json();
    if (result.ok == false) {
       input.value = '';
-      input.placeholder = 'Teléfono o email válidos';
+      input.placeholder = 'Teléfono o email no válido';
       setTimeout(function () {
          input.placeholder = 'Teléfono o email';
-      }, 1000);
+      }, 1500);
       return;
    }
 
