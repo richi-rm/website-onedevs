@@ -1,0 +1,6 @@
+default:
+   host: localhost
+   port: 3306
+   user: onedevs
+   pass: R6f*ON$HHCPhPteUd2E6&RkNDiftQWqF
+   db: onedevs

@@ -1,0 +1,152 @@
+@font-face {
+   font-family: 'nasalization';
+   src: url('../fonts/nasalization-rg.otf');
+}
+
+@font-face {
+   font-family: 'notosans';
+   src: url('../fonts/NotoSans-Regular.ttf');
+}
+
+@main-color: #008ec6;
+@secondary-color: #cdf0fe;
+
+@gray: #808080;
+@gray-light: #e0e0e0;
+
+a {
+   text-decoration: none;
+}
+
+body {
+   font-family: 'notosans';
+   margin: 0;
+   padding: 0;
+   header {
+      position: fixed;
+      width: 100%;
+      nav {
+         ul {
+            background-color: @main-color;
+            border-top: solid 3px black;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            li {
+               display: inline-block;
+               padding: 20px;
+               a {
+                  color: white;
+                  font-family: 'nasalization';
+               }
+            }
+            li:hover {
+               background-color: white;
+               a {
+                  color: @main-color;
+               }
+            }
+         }
+      }
+   }
+   main {
+      section {
+         padding-top: 30px;
+         h1 {
+            border-top: solid 1px @secondary-color;
+            color: @main-color;
+            font-family: 'nasalization';
+            margin: 40px 13px 13px 13px;
+            padding: 33px;
+            text-align: center;
+         }
+         p {
+            margin: 0;
+            padding: 23px;
+            text-align: center;
+            img.logo {
+               margin-top: 43px;
+            }
+         }
+         div {
+            text-align: center;
+            div.w200 {
+               display: inline-block;
+               width: 200px;
+               ul {
+                  list-style-type: none;
+                  margin: 0;
+                  padding: 0;
+                  text-align: left;
+               }
+            }
+            div.w350 {
+               display: inline-block;
+               width: 350px;
+               form.contact {
+                  input[type="text"] {
+                     border-radius: 15px;
+                     border: solid 3px @secondary-color;
+                     font-family: 'nasalization';
+                     padding: 10px;
+                     text-align: center;
+                     width: 300px;
+                  }
+                  input[type="button"] {
+                     background-color: @main-color;
+                     border: solid 3px @secondary-color;
+                     border-radius: 15px;
+                     cursor: pointer;
+                     color: white;
+                     font-family: 'nasalization';
+                     padding: 10px;
+                     width: 150px;
+                  }
+               }
+            }
+         }
+      }
+   }
+   footer {
+      p {
+         color: @main-color;
+         text-align: center;
+      }
+   }
+}
+
+
+/*
+ * mobile
+ */
+
+@media screen and (max-width: 1200px) {
+   body {
+      header {
+         nav {
+            ul {
+               li {
+                  display: block;
+               }
+            }
+         }
+      }
+      main {
+         section {
+            padding-top: 90px;
+            h1 {
+               margin: 170px 13px 13px 13px;
+            }
+            p {
+               margin: 0;
+               padding: 23px;
+               text-align: center;
+               img.logo {
+                  margin-top: 193px;
+               }
+            }
+         }
+      }
+   }
+}

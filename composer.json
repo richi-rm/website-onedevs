@@ -1,0 +1,13 @@
+{
+    "name": "richirm/website-onedevs",
+    "type": "project",
+    "require": {
+        "symfony/yaml": "^6.3"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ricardo Ruiz Martínez"
+        }
+    ]
+}
