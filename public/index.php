@@ -33,7 +33,7 @@
          <a name="logo"></a>
          <section>
             <p>
-               <img class="logo" src="images/logo-onedevs-w300-h315.png" width="300" alt="OneDevs Logo" />
+               <img class="logo" src="images/logo-onedevs-w300-h315.png" width="250" alt="OneDevs Logo" />
             </p>
          </section>
 
@@ -85,7 +85,7 @@
                contacto y te contactaremos lo antes posible.
             </p>
             <div>
-               <div class="w350">
+               <div class="w300">
                   <form class="contact">
                      <input type="text" id="email_or_phone" placeholder="Teléfono o email" />
                      <br />
