@@ -44,27 +44,42 @@ async function send_contact()
    // email or phone
    //
    input = document.getElementById('email_or_phone');
+
    contact = input.value.trim();
+
    if (contact == '') {
       input.value = '';
+      input.placeholder = 'Aquí un teléfono o email';
+      setTimeout(function () {
+         input.placeholder = 'Teléfono o email';
+      }, 1000);
       return;
    }
 
-   const response = await fetch('ajax.php?do=save_contact&contact=' + contact);
-   const result = await response.text();
-   // console.log(result);
+   const response = await fetch('ajax.php?do=save_contact&contact=' + encodeURIComponent(contact));
+   const result = await response.json();
+   if (result.ok == false) {
+      input.value = '';
+      input.placeholder = 'Teléfono o email válidos';
+      setTimeout(function () {
+         input.placeholder = 'Teléfono o email';
+      }, 1000);
+      return;
+   }
 
    // disable inputs
    //
 
    input.value = '';
+   input.style.borderColor = '#d0d0d0';
+   input.disabled = true;
 
-   document.getElementById('email_or_phone').disabled = true;
-   document.getElementById('email_or_phone').style.borderColor = '#d0d0d0';
-   document.getElementById('send_contact_button').disabled = true;
-   document.getElementById('send_contact_button').style.backgroundColor = '#a0a0a0';
-   document.getElementById('send_contact_button').style.borderColor = '#d0d0d0';
-   document.getElementById('send_contact_button').style.cursor = 'auto';
+   send_contact_button = document.getElementById('send_contact_button');
+   send_contact_button.value = '¡Gracias!';
+   send_contact_button.style.backgroundColor = '#a0a0a0';
+   send_contact_button.style.borderColor = '#d0d0d0';
+   send_contact_button.style.cursor = 'auto';
+   send_contact_button.disabled = true;
 
    // emoji corazón
    //
@@ -76,6 +91,4 @@ async function send_contact()
    setTimeout(function () {
       emoji_2.innerHTML = '&nbsp;';
    }, 2100);
-
-   document.getElementById('send_contact_button').value = '¡Gracias!';
 }
