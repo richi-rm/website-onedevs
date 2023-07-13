@@ -85,7 +85,7 @@
                contacto y te contactaremos lo antes posible.
             </p>
             <div>
-               <div class="w300">
+               <div class="w250">
                   <form class="contact">
                      <input type="text" id="email_or_phone" placeholder="Teléfono o email" />
                      <br />
