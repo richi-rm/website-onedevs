@@ -57,18 +57,18 @@
                especializados en la creación de sitios web mediante PHP y
                MariaDB.<br />
                <br />
-               Gestionamos desde la toma de requisitos hasta la entrega del
-               proyecto y su mantenimiento.
+               Gestionamos desde la toma de requisitos hasta la entrega final
+               del proyecto y su mantenimiento.
             </p>
          </section>
 
          <a name="comonoshasconocido"></a>
          <section>
-            <h1>Cómo nos has conocido</h1>
+            <h1>¿Cómo nos has conocido?</h1>
             <div>
-               <div class="w200">
+               <div class="w260">
                   <ul>
-                     <li><input type="radio" id="channel1" name="channel" onchange="how_did_you_meet_us();">&nbsp;&nbsp;Por el boca a boca</li>
+                     <li><input type="radio" id="channel1" name="channel" onchange="how_did_you_meet_us();">&nbsp;&nbsp;Por un conocido/a o amigo/a</li>
                      <li><input type="radio" id="channel2" name="channel" onchange="how_did_you_meet_us();">&nbsp;&nbsp;Publicidad en Internet</li>
                      <li><input type="radio" id="channel3" name="channel" onchange="how_did_you_meet_us();">&nbsp;&nbsp;Publicidad impresa</li>
                      <li><input type="radio" id="channel4" name="channel" onchange="how_did_you_meet_us();">&nbsp;&nbsp;Otros</li>
