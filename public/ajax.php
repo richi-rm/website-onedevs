@@ -83,7 +83,19 @@
          ]);
          die();
       }
-      $contact = str_replace('\'', '', $_GET['contact']);
+      $contact = $_GET['contact'];
+      $contact = preg_replace('/\s+/', '', $contact);
+      $contact = str_replace('\'', '', $contact);
+      if (
+         \filter_var($contact, FILTER_VALIDATE_EMAIL) === false &&
+         !preg_match('/^(\+[0-9]+)?[0-9]+$/', $contact)
+      ) {
+         echo \json_encode([
+            'ok' => false,
+            'message' => 'bad parameter: "contact"'
+         ]);
+         die();
+      }
       $datetime = \date('T Y-m-d H:i:s A');
       $sql = "insert into contacts(contact, datetime) values('{$contact}', '{$datetime}')";
       $exec_query = \mysqli_query($GLOBALS['mariadb_connections']['default'], $sql);
