@@ -71,6 +71,7 @@ async function send_contact()
    //
 
    input.value = '';
+   input.placeholder = 'En breve te contactaremos';
    input.style.borderColor = '#d0d0d0';
    input.disabled = true;
 
