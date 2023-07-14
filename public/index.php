@@ -20,12 +20,31 @@
       <header>
 
          <div>
-            <div><a href="#inicio">Inicio</a></div>
-            <div><a href="#quienessomos">Quiénes somos</a></div>
-            <div><a href="#quehacemos">Qué hacemos</a></div>
-            <div><a href="#trabajadopara">Hemos trabajado para</a></div>
-            <div><a href="#comonoshasconocido">¿Cómo nos has conocido?</a></div>
-            <div><a href="#contactaconnosotros">Contacta con nosotros</a></div>
+
+            <div>
+               <a href="#inicio">Inicio</a>
+            </div>
+
+            <div>
+               <a href="#quienessomos">Quiénes somos</a>
+            </div>
+
+            <div>
+               <a href="#quehacemos">Qué hacemos</a>
+            </div>
+
+            <div>
+               <a href="#trabajadopara">Hemos trabajado para</a>
+            </div>
+
+            <div>
+               <a href="#comonoshasconocido">¿Cómo nos has conocido?</a>
+            </div>
+
+            <div>
+               <a href="#contactaconnosotros">Contacta con nosotros</a>
+            </div>
+
          </div>
 
       </header>
