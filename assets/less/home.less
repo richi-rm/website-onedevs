@@ -31,13 +31,13 @@ html {
          margin: 0;
          padding: 0;
          div {
+            align-items: center;
             background-color: @main-color;
             border-bottom: solid 1px black;
             border-top: solid 2px black;
             display: flex;
-               flex-direction: row;
-               align-items: center;
-               justify-content: center;
+            flex-direction: row;
+            justify-content: center;
             div {
                border: 0;
                height: 77px;
@@ -74,12 +74,13 @@ html {
             div {
                text-align: center;
                div.workedfor {
+                  align-items: center;
                   display: flex;
-                     align-items: center;
+                  flex-direction: row;
                   margin: 0 auto 0 auto;
+                  width: 900px;
                   div.logo {
-                     float: left;
-                     transition: 0.65s;
+                     transition: 0.40s;
                      width: 500px;
                   }
                   div.logo:hover {
@@ -88,9 +89,8 @@ html {
                   div.text {
                      border-radius: 100px;
                      border: solid 2px @main-color;
-                     float: right;
                      padding: 50px;
-                     width: 300px;
+                     width: 400px;
                   }
                }
                div.w260 {
@@ -165,10 +165,10 @@ html {
             padding: 0;
             position: fixed;
             div {
+               align-items: center;
                display: flex;
-                  flex-direction: column;
-                  align-items: center;
-                  justify-content: center;
+               flex-direction: column;
+               justify-content: center;
                div {
                   height: 33px;
                }
@@ -182,12 +182,8 @@ html {
                padding-top: 187px;
                div {
                   div.workedfor {
-                     text-align: center;
                      div.logo {
                         margin: 0 auto 0 auto;
-                        img {
-                           width: 200px;
-                        }
                      }
                      div.text {
                         display: none;
