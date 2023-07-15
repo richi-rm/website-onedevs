@@ -21,7 +21,7 @@
 
          <nav class="menu">
             <ul>
-               <li><a href="#inicio">Inicio</a></li>
+               <li><a href="#inicio">OneDevs</a></li>
                <li><a href="#quienessomos">Quiénes somos</a></li>
                <li><a href="#quehacemos">Qué hacemos</a></li>
                <li><a href="#trabajadopara">Hemos trabajado para</a></li>
@@ -76,7 +76,7 @@
          <a class="anchor" name="trabajadopara"></a>
          <section>
             <h1>
-               Hemos trabajado para :
+               Hemos trabajado para clientes memorables como :
             </h1>
             <div class="worked-for">
                <div class="logo-company">
