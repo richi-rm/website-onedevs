@@ -53,8 +53,10 @@
                Somos un grupo de <b>profesionales apasionados de la
                tecnología</b> y el desarrollo web.<br />
                <br />
-               ¿Tu negocio / empresa / organización necesita una nueva web o
-               mantener la actual? <b>¡Cuenta con nosotros!</b>
+               ¿Tu negocio / empresa / organización necesita una web nueva o
+               mantener la actual?<br />
+               <br />
+               <b>¡Cuenta con nosotros!</b>
             </p>
          </section>
 
@@ -68,8 +70,9 @@
                especializados en la creación de sitios web mediante PHP,
                MariaDB y JavaScript.<br />
                <br />
-               Gestionamos <b>desde la toma de requisitos hasta la entrega final
-               del proyecto</b> y su mantenimiento.
+               Llevamos a cabo <b>desde la toma de requisitos</b>, el diseño de
+               la web, la maquetación, la parte back, <b>la entrega final del
+               proyecto</b> y su mantenimiento.
             </p>
          </section>
 
