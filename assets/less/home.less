@@ -11,189 +11,103 @@
 @main-color: #008ec6;
 @secondary-color: #cdf0fe;
 
-@gray: #808080;
-@gray-light: #e0e0e0;
-
 a {
    text-decoration: none;
 }
 
 html {
-   margin: 0;
-   padding: 0;
    body {
       font-family: 'notosans';
       margin: 0;
       padding: 0;
+      text-align: center;
       header {
-         position: fixed;
-         width: 100%;
-         margin: 0;
-         padding: 0;
-         div {
-            align-items: center;
-            background-color: @main-color;
-            border-bottom: solid 1px black;
-            border-top: solid 2px black;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            div {
-               border: 0;
-               height: 77px;
-               margin: 0 12px 0 12px;
-               a {
-                  font-family: 'nasalization';
-                  color: white;
-               }
-               a:visited {
-                  color: white;
+         nav {
+            ul {
+               background-color: @main-color;
+               list-style-type: none;
+               margin: 0;
+               padding: 0;
+               li {
+                  padding: 10px;
+                  text-align: center;
+                  a, a:visited {
+                     color: white;
+                     font-family: 'nasalization';
+                  }
                }
             }
          }
       }
       main {
-         section.logo {
-            padding-top: 110px;
-         }
          section {
-            padding-top: 66px;
-            div.logo {
-               text-align: center;
-            }
             h1 {
                border-top: solid 1px @secondary-color;
                color: @main-color;
-               font-family: 'nasalization';
-               padding: 33px;
-               text-align: center;
+               margin: 55px 15px 35px 15px;
+               padding-top: 75px;
             }
             p {
-               text-align: center;
+               margin: 0 23px 0 23px;
             }
-            div {
-               text-align: center;
-               div.workedfor {
-                  align-items: center;
-                  display: flex;
-                  flex-direction: row;
-                  margin: 0 auto 0 auto;
-                  width: 900px;
-                  div.logo {
-                     transition: 0.40s;
-                     width: 500px;
-                  }
-                  div.logo:hover {
-                     transform: scale(1.2);
-                  }
-                  div.text {
-                     border-radius: 100px;
-                     border: solid 2px @main-color;
-                     padding: 50px;
-                     width: 400px;
-                  }
+            .worked-for {
+               .text-company {
+                  display: none;
                }
-               div.w260 {
-                  display: inline-block;
-                  width: 260px;
-                  ul {
-                     list-style-type: none;
-                     margin: 0;
-                     padding: 0;
+            }
+            .how-did-you-meet-us {
+               display: inline-block;
+               width: 260px;
+               ul {
+                  list-style-type: none;
+                  margin: 0;
+                  padding: 0;
+                  li {
                      text-align: left;
                   }
                }
-               div#emoji_1 {
-                  height: 33px;
-                  transition: 2s;
-               }
-               div#emoji_1.emoji_1_move {
-                  color: transparent;
-                  margin-top: -160px;
-                  padding-bottom: 160px;
-               }
-               div.w250 {
-                  display: inline-block;
-                  width: 250px;
-                  form.contact {
-                     input[type="text"] {
-                        border-radius: 15px;
-                        border: solid 3px @secondary-color;
-                        font-family: 'nasalization';
-                        padding: 10px;
-                        text-align: center;
-                        width: 200px;
-                     }
-                     input[type="button"] {
-                        background-color: @main-color;
-                        border: solid 3px @secondary-color;
-                        border-radius: 15px;
-                        cursor: pointer;
-                        color: white;
-                        font-family: 'nasalization';
-                        padding: 10px;
-                        width: 150px;
-                     }
+            }
+            div#emoji_1 {
+               text-align: center;
+               transition: 2s;
+            }
+            div.emoji_1_move {
+               color: transparent;
+               margin-top: -160px;
+               padding-bottom: 160px            
+            }
+            .contact {
+               margin: 0 23px 0 23px;
+               form {
+                  input[type="text"] {
+                     border-radius: 15px;
+                     border: solid 3px @secondary-color;
+                     font-family: 'nasalization';
+                     padding: 10px;
+                     text-align: center;
+                     width: 200px;
                   }
-               }
-               div#emoji_2 {
-                  height: 33px;
-                  transition: 2s;
-               }
-               div#emoji_2.emoji_2_move {
-                  color: transparent;
-                  margin-top: -160px;
-                  padding-bottom: 160px;
-               }
-            }
-         }
-      }
-      footer {
-         p {
-            color: @main-color;
-            text-align: center;
-         }
-      }
-   }
-}
-
-@media screen and (max-width: 1200px) {
-   html {
-      body {
-         header {
-            margin: 0;
-            padding: 0;
-            position: fixed;
-            div {
-               align-items: center;
-               display: flex;
-               flex-direction: column;
-               justify-content: center;
-               div {
-                  height: 33px;
+                  input[type="button"] {
+                     background-color: @main-color;
+                     border: solid 3px @secondary-color;
+                     border-radius: 15px;
+                     cursor: pointer;
+                     color: white;
+                     font-family: 'nasalization';
+                     padding: 10px;
+                     width: 150px;
+                  }                  
                }
             }
-         }
-         main {
-            section.logo {
-               padding-top: 233px;
+            div#emoji_2 {
+               text-align: center;
+               transition: 2s;
             }
-            section {
-               padding-top: 187px;
-               div {
-                  div.workedfor {
-                     div.logo {
-                        margin: 0 auto 0 auto;
-                        img {
-                           width: 200px;
-                        }
-                     }
-                     div.text {
-                        display: none;
-                     }
-                  }
-               }
-            }
+            div.emoji_2_move {
+               color: transparent;
+               margin-top: -160px;
+               padding-bottom: 160px            
+            }            
          }
       }
    }
