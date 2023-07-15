@@ -76,7 +76,7 @@ async function send_contact()
    input.disabled = true;
 
    send_contact_button = document.getElementById('send_contact_button');
-   send_contact_button.value = '¡Gracias!';
+   send_contact_button.value = '¡ Gracias !';
    send_contact_button.style.backgroundColor = '#a0a0a0';
    send_contact_button.style.borderColor = '#d0d0d0';
    send_contact_button.style.cursor = 'auto';

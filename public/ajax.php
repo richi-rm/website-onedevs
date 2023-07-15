@@ -38,8 +38,8 @@
    $do();
    die();
 
-   /*
-    * Functions
+   /**
+    * Function: increment channel.
     */
 
    function inc_channel()
@@ -74,6 +74,10 @@
       ]);
    }
 
+   /**
+    * Function: save contact.
+    */
+
    function save_contact()
    {
       if (!\array_key_exists('contact', $_GET)) {
@@ -88,7 +92,7 @@
       $contact = str_replace('\'', '', $contact);
       if (
          \filter_var($contact, FILTER_VALIDATE_EMAIL) === false &&
-         !preg_match('/^(\+[0-9]+)?[0-9]+$/', $contact)
+         !preg_match('/^(\+[0-9]+){0,5}[0-9]{4,30}$/', $contact)
       ) {
          echo \json_encode([
             'ok' => false,
@@ -96,8 +100,19 @@
          ]);
          die();
       }
+
       $datetime = \date('T Y-m-d H:i:s A');
-      $sql = "insert into contacts(contact, datetime) values('{$contact}', '{$datetime}')";
+      $datetime = str_replace('\'', '', $datetime);
+
+      $user_ip4 = $_SERVER['REMOTE_ADDR'];
+      $user_ip4 = str_replace('\'', '', $user_ip4);
+
+      $user_agent = $_SERVER['HTTP_USER_AGENT'];
+      $user_agent = str_replace('\'', '', $user_agent);
+
+      $sql = "insert into contacts(contact, datetime, user_ip4, user_agent) values(" .
+                 "'{$contact}', '{$datetime}', '{$user_ip4}', '{$user_agent}'" .
+              ")";
       $exec_query = \mysqli_query($GLOBALS['mariadb_connections']['default'], $sql);
       if ($exec_query === false) {
          echo \json_encode([
