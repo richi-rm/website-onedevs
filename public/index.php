@@ -80,53 +80,27 @@
             </h1>
             <div class="worked-for">
                <div class="logo-company">
-                  <img src="images/logo-ccep-w500-h300.png" width="300" alt="Coca-Cola Europacific Partners">
-               </div>
-               <div class="text-company">
-                  Desarrollo de webs públicas para <u>promociones comerciales
-                  de bebidas energéticas</u>.
+                  <img src="images/logo-ccep-w500-h300.png" width="250" alt="Coca-Cola Europacific Partners">
                </div>
             </div>
-            <div>
-               <div class="worked-for">
-                  <div class="logo-company">
-                     <img src="images/logo-bbva-w500-h300.png" width="300" alt="BBVA">
-                  </div>
-                  <div class="text-company">
-                     Desarrollo de <u>aplicación interna en WordPress</u>, para
-                     el Banco.
-                  </div>
+            <div class="worked-for">
+               <div class="logo-company">
+                  <img src="images/logo-bbva-w500-h300.png" width="250" alt="BBVA">
                </div>
             </div>
-            <div>
-               <div class="worked-for">
-                  <div class="logo-company">
-                     <img src="images/logo-mapfre-w500-h300.png" width="300" alt="Mafre">
-                  </div>
-                  <div class="text-company">
-                     Desarrollo de <u>evolutivos para webs internas</u>.
-                  </div>
+            <div class="worked-for">
+               <div class="logo-company">
+                  <img src="images/logo-mapfre-w500-h300.png" width="250" alt="Mafre">
                </div>
             </div>
-            <div>
-               <div class="worked-for">
-                  <div class="logo-company">
-                     <img src="images/logo-aecc-w500-h300.png" width="300" alt="AECC">
-                  </div>
-                  <div class="text-company">
-                     <u>Mantenimiento de su web pública principal</u>.
-                  </div>
+            <div class="worked-for">
+               <div class="logo-company">
+                  <img src="images/logo-aecc-w500-h300.png" width="250" alt="AECC">
                </div>
             </div>
-            <div>
-               <div class="worked-for">
-                  <div class="logo-company">
-                     <img src="images/logo-aldeasinfantiles-w500-h300.png" width="300" alt="Aldeas Infantiles">
-                  </div>
-                  <div class="text-company">
-                     Desarrollo con Symfony y mantenimiento de <u>web de gestión
-                     del personal de la Empresa</u>.
-                  </div>
+            <div class="worked-for">
+               <div class="logo-company">
+                  <img src="images/logo-aldeasinfantiles-w500-h300.png" width="250" alt="Aldeas Infantiles">
                </div>
             </div>
          </section>
